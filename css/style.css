@@ -1,0 +1,350 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+/*Cuerpo*/
+body{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}   /*Cuerpo*/
+body::-webkit-scrollbar{
+    display: none;
+}/*scroll*/
+
+
+/*Navbar principal*/
+.navegacion-principal{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.71);
+    color: #a6a6a6;
+}
+.navegacion-principal li{
+    display: inline;
+}/*Barra de navegación superior*/
+.contenedorPortafolio, .contenedorNombreLogos{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}/*alineacion contenedores*/
+#logo-linkedin, #logo-github, #logo-email{
+    width: 45px;
+    height: auto;
+}/*tamaño logos*/
+.titulo-nombre, .titulo-portafolio{
+    font-size: 30px;
+}/*tamaño de letra*/
+.titulo-portafolio{
+    margin-left: 50px;
+}/*Margen*/
+.titulo-nombre{
+    margin-right: 30px;
+}/*Margen*/
+
+
+/*Barra de navegación lateral*/
+.navegacion-lateral{
+    position: fixed;
+    top: 110px;
+}/*posicion*/
+.navegacion-lateral #ultimo-logo{
+    position: relative;
+    left: 5px;
+    top: 2px;
+}/*posicion*/
+
+
+/*Sección presentación*/
+.principal{
+    display: flex;
+    padding: 135px 0 0 0;
+    width: 940px;
+    margin: 0 auto;
+}
+.container-presentacion{
+    flex-direction: column;
+}
+.img-presentacion{
+    justify-content: left;
+    width: 450px;
+    margin: 0 20px 20px 0;
+    border-radius: 100px;
+}
+.titulo-saludo{
+    font-size: 130px;
+    padding: 10px 0 15px 0;
+}
+.titulo-saludo-datos{
+    font-size: 100px;
+}
+.frase{
+    font-size: 22px;
+    padding: 10px 0 5px 0;
+}
+.frase-autor{
+    font-size: 22px;
+}    
+
+
+/*Secciones*/
+.proyectos,
+.certificados,
+.nube{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: auto;
+    padding: 140px 0 0 0;
+    margin: 0 40px 40px 50px;
+}   /*Contenedor de secciones*/
+
+.container-proyectos,
+.container-certificados,
+.container-nube{
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}   /*Contenedor de boton, parrafo y titulo*/
+
+.img-proyectos,
+.img-certificados,
+.img-nube{
+    width: 800px;
+    height: 540px;
+    transition: 600ms;
+}   /*Imagen de secciones*/
+
+.titulo-proyectos,
+.titulo-certificados,
+.titulo-nube{
+    font-size: 100px;
+    margin-bottom: 10px;
+}   /*Titulo de secciones*/
+
+.proyectos p,
+.certificados p,
+.nube p{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: rgba(41, 39, 39, 0.81);
+}   /*Parrafo de secciones*/
+
+.proyectos .btn-muestrameMas,
+.certificados .btn-muestrameMas,
+.nube .btn-muestrameMas{
+    width: 350px;
+    padding: 15px 50px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #000000;
+    border:none;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.2s;
+    cursor:pointer;
+}   /*Boton de secciones*/
+
+
+.proyectos .btn-muestrameMas:hover{
+    background-color: #000000;
+    box-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #000000;
+}   /*Boton proyectos*/
+.certificados .btn-muestrameMas:hover{
+    background-color: #000000;
+    box-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #000000;
+}   /*Boton certificados*/
+.nube .btn-muestrameMas:hover{
+    background-color: #000000;
+    box-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #000000;
+}   /*Boton certificados*/
+.btn-muestrameMas a{
+    color: white;
+    text-decoration: none;
+}/*Color de letras de botones*/
+
+
+.img-sobreMi, .img-proyectos, .img-certificados, .img-nube{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 5px 5px 5px 5px #000000;
+}/*Bordes de imagenes*/
+
+.img-proyectos:hover{
+    filter: blur(5px);   
+}
+.img-certificados:hover{
+    opacity: 70%;
+}
+.img-nube:hover{
+    opacity: 70%;
+}
+
+
+
+/*R*/
+@media screen and (max-width:1335px){        /*si identifica una pantalla de hasta 480px*/
+    .principal{
+        padding-left: 70px;
+    }
+    .titulo-nube{
+        width: 510px;
+    }
+    .container-proyectos{
+        margin-right: 93px;
+    }
+    .container-nube{
+        margin-right: 50px;
+    }
+    .nube{
+        margin-bottom: 36rem;
+    }
+}
+
+
+@media screen and (max-width:960px){        /*si identifica una pantalla de hasta 480px*/
+    .principal{
+        padding-left: 200px;
+    }
+    
+    
+   
+}
+
+@media screen and (max-width:720px){        /*si identifica una pantalla de hasta 480px*/
+    body{
+        display: flex;
+    }
+
+    .navegacion-principal{
+        width: 100%;
+        height: 310px;
+    }
+    .titulo-nombre{
+        display: none;
+    }
+    .contenedorNombreLogos{
+        display: flex;
+        
+    }
+    .titulo-portafolio{
+        font-size: 90px;
+    }
+    #logo-linkedin, #logo-github, #logo-email{
+        width: 150px;
+        height: 150px;
+    }/*barra de navegacion principal*/
+    .logos-barraNavegacionLateral{
+        display: none;
+    }/*barra de navegacion lateral*/
+
+
+    .principal{
+        display: flex;
+        padding: 300px 0 0 0;
+        width: auto;
+        height: auto;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .container-presentacion{
+        width: auto;
+        text-align: center;
+    }
+    .img-presentacion{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        border-radius: 0; 
+    }
+    .titulo-saludo{
+        font-size: 380px;
+    }
+    .titulo-saludo-datos{
+        font-size: 200px;
+    }
+    .frase{
+        font-size: 70px;
+    }
+    .frase-autor{
+        font-size: 70px;
+    }/*seccion principal*/
+
+
+    .proyectos, .certificados, .nube{
+        display: flex;
+        padding-top: 300px;
+        margin-bottom: 100px;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    .nube{
+        margin-bottom: 430px;
+    }
+    .img-proyectos, .img-certificados{
+        width: 100%;
+        height: auto;
+    }
+    .img-nube{
+        width: 100%;
+        height: 855px;
+    }
+    .container-proyectos, .container-certificados, .container-nube{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 0 80px 0;
+        padding: 0;
+        height: auto;
+        width: auto;
+        flex-wrap: wrap;
+    }
+    .container-proyText, .container-cerText, .container-nubeText{
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo-proyectos, .titulo-certificados, .titulo-nube{
+        text-align: center;
+        font-size: 210px;
+        width: auto;
+    }
+    .proyectos p, .nube p, .certificados p{
+        text-align: center;
+        font-size: 70px;
+        margin-top: 10px;
+        
+    }
+    .certificados p{
+        width: 1140px;
+    }
+    .proyectos p{
+        width: 1100px;
+    }
+    .nube p{
+        width: 1150px;
+    }
+    .proyectos .btn-muestrameMas, .certificados .btn-muestrameMas, .nube .btn-muestrameMas{
+        margin-top: 25px;
+        width: 600px;
+        height: 130px;
+        padding: 15px 50px;
+        font-size: 50px;
+        border-radius: 5px;
+        
+    }
+    .nube{
+        margin-bottom: 970px;
+    }
+    
+
+
+    /*Secciones*/
+}

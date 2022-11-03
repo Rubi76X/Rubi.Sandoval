@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}   /*Cuerpo*/
+body::-webkit-scrollbar{
+    display: none;
+}/*scroll*/
+
+.titulo-nombre{
+    font-size: 30px;
+    top: 40px;
+    left: 1120px;
+}
+.nav-fecha img{
+    position: relative;
+    top: 0;
+    left: 30px;
+    width: 45px;
+    height: 45px;
+}
+#logo-linkedin, #logo-github, #logo-email{
+    width: 45px;
+    height: 45px;
+}
+#logo-email{
+    margin-right: 20px;
+}
+.navegacion-principal{
+    position: relative;
+    right: 0;
+    top: 0;
+}
+.navegacion-principal li{
+    display: inline;
+}   /*Barra de navegacion*/
+
+
+/*Seccion de presentacion*/
+.imgProyec{
+    margin:  0 50px;
+    width: auto;
+    height: 580px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/proyectos.jpeg);
+    background-repeat: round;
+}
+.imgProyec h1{
+    position: relative;
+    top: 230px;
+    font-size: 100px;
+    text-align: center;
+    color: white;
+}/*texto del encabezado*/
+
+
+/*Seccion descripcion*/
+.seccion-descripcion{
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+} 
+.descripcion{
+    font-size: 20px;
+    color: rgb(105, 112, 115);
+    text-align: justify;
+    width: 50%;
+}
+.contenedorHerramientas{
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+}
+.contenedorTituloT{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.tituloT img{
+    width: 520px;
+    height: 280px;
+    margin: 10px;
+}
+.tituloD, .tituloT, .tituloT1{
+    font-size: 80px;
+    color: black;
+}
+.tituloT img .imgGit{
+    margin-left: 50px;
+}
+.tituloT{
+    margin: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+.tituloT1{
+    margin-left: 50px;
+}
+
+.titulo-tecnologias{
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20%;
+    margin: 0 250px;
+    font-size: 30px;
+    color: rgb(121, 127, 135);
+}
+
+.titulo-tecnologias div{
+    width: 33%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.container h1{
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*Seccion de desarrollo*/
+.seccion-desarrollo{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    margin: 50px 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+}
+.containerTituloPasos{
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(1, 1, 1);
+}
+.containerImg{
+    width: 65%;
+    height: auto;
+}
+.containerImg img{
+    width: 100%;
+    height: auto;
+}
+
+.containerTituloPasos h1{
+    font-size: 60px;
+    color: white;
+}/*titulo de la pagina web*/
+
+.btn-sitio{
+    width: 150px;
+}/*boton*/
+
+
+/*Footer*/
+footer{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.footer {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("http://andreeabunget.co.uk/Img/footer.jpg");
+    background-size: cover;
+    
+}
+.first {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: rgb(206,206,206);
+    font-family: 'Poppins', sans-serif;
+}
+    .first h4 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 1.6em;
+        color: #fff;
+        padding-bottom: 0.5em;
+    }
+        .first h4::after {
+            content: '';
+            background: #66c83d;
+            width: 20%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    .first p {
+        font-size: 14px;
+    }
+.second {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: rgb(206,206,206);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.second2 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: rgb(206,206,206);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.second h4 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    color: #fff;
+    padding-bottom: 0.5em;
+}
+    .second h4::after {
+        content: '';
+        background: #66c83d;
+        width: 20%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+    }
+.second li {
+    list-style: none;
+    padding-bottom: 30px;
+}
+.second a, .second2 a {
+    color: rgb(206, 206, 206);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+}
+    .second a:hover, .second2 a:hover {
+        color: #fff;
+        transition: 0.2s;
+        text-shadow: 1px 1px 20px rgba(0,0,0,1);
+        text-decoration: none
+
+    }
+.third {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: rgb(206,206,206);
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+}
+    .third h4 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 1.6em;
+        color: #fff;
+        padding-bottom: 0.5em;
+    }
+        .third h4::after {
+            content: '';
+            background: #66c83d;
+            width: 20%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 80%;
+        }
+    .third li {
+        list-style: none;
+        padding-bottom: 15px;
+    }
+    .third a {
+        color: rgb(206, 206, 206);
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 14px;
+        transition: 0.2s;
+    }
+        .third a:hover {
+            color: #fff;
+            transition: 0.2s;
+            text-shadow: 1px 1px 20px rgba(0,0,0,1);
+        }
+@media screen and (max-width:1000px) {
+    .first {
+        text-align: center;
+    }
+
+        .first h4::after {
+            left: 40%;
+        }
+}
+@media screen and (max-width:1000px) {
+    .third {
+        text-align: center;
+    }
+
+        .third h4::after {
+            left: 40% !important;
+        }
+}
+.margin {
+    margin-left: 20px;
+}
+.line {
+    height:2px;
+    background-color:rgb(206,206,206);
+    width:100%;
+}
+.container h1{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:100px;
+}
+/*footer*/
+
+
+
+
+
+
+@media (max-width:1050px) {
+    .nav-fecha img{
+        left: 0;
+    }
+    #logo-email{
+        margin-right: 0;
+    }
+    .emailDireccion{
+        margin-right: 0;
+    }
+    .imgProyec{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .titulo-tecnologias{
+        margin: 0 100px;
+    }
+
+    .containerTituloPasos{
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .containerImg{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:720px) {
+    .descripcion{
+        width: 100%;
+    }
+    .containerTituloPasos{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footerContacto, .footerNavegacion{
+        display: none;
+    }
+}
+
+@media (max-width:570px) {
+    .nav-fecha img{
+        left: 0;
+        width: 40px;
+        height: 40px;
+    }
+    .titulo-nombre{
+        display: none;
+    }
+    #logo-linkedin, #logo-github, #logo-email{
+        width: 40px;
+        height: 40px;
+    }
+    #logo-email{
+        margin-right: 0;
+    }/*barra de navegacion*/
+
+    /*Seccion de presentacion*/
+    .imgProyec{
+        height: 420px;
+    }
+    .imgProyec h1{
+        top: 160px;
+        font-size: 70px;
+    }/*texto del encabezado*/
+
+
+    
+    
+
+    .seccion-descripcion{
+        margin: 20px;
+    }
+    .tituloD h1, .tituloT h1, .tituloT1 h1{
+        font-size: 30px;
+        text-align: left;
+    }
+    .tituloT1{
+        margin-left: 20px;
+    }
+    .contenedorHerramientas{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .descripcion p{
+        font-size: 17px;
+    }
+    .titulo-tecnologias{
+        justify-content: left;
+        margin-left: 20px;
+        margin-right: 10px;
+        font-size: 17px;
+    }
+    .titulo-tecnologias div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+
+    /*seccion de desarrollo*/
+    .seccion-desarrollo{
+        margin: 25px 10px;
+    }
+    .containerTituloPasos h1{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .btn-sitio{
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+        padding: 2px;
+        margin-bottom: 7px;
+    }
+    .tituloT img{
+        width: 320px;
+        height: 180px;
+        margin: 10px;
+    }
+    
+}
+
+@media (max-width:420px) {
+    .imgProyec h1{
+        top: 160px;
+        font-size: 55px;
+    }
+    .containerTituloPasos h1{
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+}
