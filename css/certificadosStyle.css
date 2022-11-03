@@ -26,6 +26,9 @@ body::-webkit-scrollbar{
     width: 45px;
     height: 45px;
 }
+#logo-email{
+    margin-right: 20px;
+}
 .navegacion-principal{
     position: relative;
     right: 0;
