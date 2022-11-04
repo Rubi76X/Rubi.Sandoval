@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
 /*Cuerpo*/
@@ -63,29 +62,31 @@ body::-webkit-scrollbar{
     padding: 135px 0 0 0;
     width: 940px;
     margin: 0 auto;
+    align-items: center;
 }
 .container-presentacion{
     flex-direction: column;
 }
 .img-presentacion{
     justify-content: left;
-    width: 450px;
-    margin: 0 20px 20px 0;
-    border-radius: 100px;
+    width: 440px;
+    margin: 0 20px 0 0;
+    border-radius: 95px;
 }
 .titulo-saludo{
-    font-size: 130px;
+    font-size: 100px;
     padding: 10px 0 15px 0;
+    margin-bottom: 15px;
 }
 .titulo-saludo-datos{
-    font-size: 100px;
+    font-size: 80px;
+    margin-bottom: 5px;
+}
+.frase, .frase-autor{
+    font-size: 20px;
 }
 .frase{
-    font-size: 22px;
     padding: 10px 0 5px 0;
-}
-.frase-autor{
-    font-size: 22px;
 }    
 
 
@@ -174,7 +175,7 @@ body::-webkit-scrollbar{
 }/*Bordes de imagenes*/
 
 .img-proyectos:hover{
-    filter: blur(5px);   
+    opacity: 70%;  
 }
 .img-certificados:hover{
     opacity: 70%;
@@ -221,7 +222,7 @@ body::-webkit-scrollbar{
 
     .navegacion-principal{
         width: 100%;
-        height: 310px;
+        height: 270px;
     }
     .titulo-nombre{
         display: none;
@@ -231,11 +232,11 @@ body::-webkit-scrollbar{
         
     }
     .titulo-portafolio{
-        font-size: 90px;
+        font-size: 70px;
     }
     #logo-linkedin, #logo-github, #logo-email{
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
     }/*barra de navegacion principal*/
     .logos-barraNavegacionLateral{
         display: none;
@@ -244,7 +245,7 @@ body::-webkit-scrollbar{
 
     .principal{
         display: flex;
-        padding: 300px 0 0 0;
+        padding: 280px 0 0 0;
         width: auto;
         height: auto;
         flex-direction: column-reverse;
@@ -261,17 +262,15 @@ body::-webkit-scrollbar{
         border-radius: 0; 
     }
     .titulo-saludo{
-        font-size: 380px;
+        font-size: 280px;
     }
     .titulo-saludo-datos{
-        font-size: 200px;
+        font-size: 170px;
     }
-    .frase{
-        font-size: 70px;
+    .frase, .frase-autor{
+        font-size: 50px;
     }
-    .frase-autor{
-        font-size: 70px;
-    }/*seccion principal*/
+    /*seccion principal*/
 
 
     .proyectos, .certificados, .nube{

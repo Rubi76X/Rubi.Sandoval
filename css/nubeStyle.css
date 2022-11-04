@@ -130,6 +130,7 @@ body::-webkit-scrollbar{
     text-align: justify;
     margin: 0;
     font-size: 18px;
+    margin: 10px;
 }/*Seccion desarrollo paso 1*/
 
 /*Footer*/
@@ -371,6 +372,7 @@ footer{
     }
     .text-block p{
         font-size: 17px;
+        margin: 8px;
     }
 }
 @media screen and (max-width:660px){ 
