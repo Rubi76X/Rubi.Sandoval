@@ -199,7 +199,6 @@ body::-webkit-scrollbar{
     }
 }
 
-
 @media screen and (max-width:960px){       
     .principal{
         padding-left: 200px;
@@ -220,7 +219,6 @@ body::-webkit-scrollbar{
     }
     .contenedorNombreLogos{
         display: flex;
-        
     }
     .titulo-portafolio{
         font-size: 80px;
@@ -228,11 +226,10 @@ body::-webkit-scrollbar{
     #logo-linkedin, #logo-github, #logo-email{
         width: 120px;
         height: 120px;
-    }/*barra de navegacion principal*/
+    }
     .logos-barraNavegacionLateral{
         display: none;
-    }/*barra de navegacion lateral*/
-
+    }
 
     .principal{
         display: flex;
@@ -277,7 +274,7 @@ body::-webkit-scrollbar{
         
     }
     .nube{
-        margin-bottom: 430px;
+        margin-bottom: 960px;
     }
     .img-proyectos, .img-certificados{
         width: 100%;
@@ -330,11 +327,5 @@ body::-webkit-scrollbar{
         border-radius: 5px;
         
     }
-    .nube{
-        margin-bottom: 970px;
-    }
-    
-
-
     /*Secciones*/
 }

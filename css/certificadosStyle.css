@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
+/*Cuerpo*/
 body{
     font-family: 'Raleway', sans-serif;
     color: black;
-}   /*Cuerpo*/
-
+}   
 body::-webkit-scrollbar{
     display: none;
 }
@@ -38,7 +38,7 @@ body::-webkit-scrollbar{
     display: inline;
 }   /*Barra de navegación superior*/
 
-
+/*Encabezado*/
 .imgCertificados{
     margin: 0 50px;
     width: auto;
@@ -53,10 +53,10 @@ body::-webkit-scrollbar{
     font-size: 100px;
     text-align: center;
     color: white;
-}/*texto del encabezado*/
-/*Encabezado*/
+}
 
 
+/*Secion de certificados*/
 .seccion-certificados{
     display: flex;
     padding: 150px 0;
@@ -70,7 +70,6 @@ body::-webkit-scrollbar{
     width: auto;
     height: auto;
 }
-
 .image {
     border-radius: 10px;
     width: 435px;
@@ -79,7 +78,6 @@ body::-webkit-scrollbar{
     border-color: #282626;
     border-width: 1px;
 }
-
 .overlay{
     position: relative;
     bottom: 335px;
@@ -108,7 +106,7 @@ body::-webkit-scrollbar{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}/*Secion de certificados*/
+}
 
 /*Footer*/
 footer{
@@ -275,6 +273,7 @@ footer{
 }
 /*footer*/
 
+
 @media (max-width:1050px) {
     .nav-fecha img{
         left: 0;
@@ -291,20 +290,19 @@ footer{
     }
 }
 
-
-
-
 @media (max-width:720px) {
     .footerContacto, .footerNavegacion{
         display: none;
     }
 }
+
 @media (max-width:620px) {
     .imgCertificados h1{
         top: 240px;
         font-size: 85px;
     }
 }
+
 @media (max-width:570px) {
     .imgCertificados{
         height: 420px;
@@ -314,6 +312,7 @@ footer{
         font-size: 70px;
     }
 }
+
 @media screen and (max-width:520px){ 
     .titulo-nombre{
         display: none;
@@ -327,8 +326,6 @@ footer{
         height: 40px;
     }/*navBar*/
 
-
-
     .image {
         border-radius: 10px;
         width: 300px;
@@ -341,11 +338,11 @@ footer{
         bottom: 230px;
     }
 }
+
 @media screen and (max-width:420px){
     .imgCertificados h1{
         top: 175px;
         font-size: 55px;
     }
-/*Secion de certificados*/
  }
 

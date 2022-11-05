@@ -8,6 +8,7 @@ body::-webkit-scrollbar{
     display: none;
 }/*scroll*/
 
+
 .titulo-nombre{
     font-size: 30px;
     top: 40px;
@@ -102,7 +103,6 @@ body::-webkit-scrollbar{
 .tituloT1{
     margin-left: 50px;
 }
-
 .titulo-tecnologias{
     display: flex;
     justify-content: flex-start;
@@ -114,7 +114,6 @@ body::-webkit-scrollbar{
     font-size: 30px;
     color: rgb(121, 127, 135);
 }
-
 .titulo-tecnologias div{
     width: 33%;
     height: auto;
@@ -125,6 +124,7 @@ body::-webkit-scrollbar{
     margin-top: 0;
     margin-bottom: 0;
 }
+
 
 /*Seccion de desarrollo*/
 .seccion-desarrollo{
@@ -152,15 +152,13 @@ body::-webkit-scrollbar{
     width: 100%;
     height: auto;
 }
-
 .containerTituloPasos h1{
     font-size: 60px;
     color: white;
-}/*titulo de la pagina web*/
-
+}
 .btn-sitio{
     width: 150px;
-}/*boton*/
+}
 
 
 /*Footer*/
@@ -329,10 +327,7 @@ footer{
 /*footer*/
 
 
-
-
-
-
+/*R*/
 @media (max-width:1050px) {
     .nav-fecha img{
         left: 0;
@@ -350,7 +345,6 @@ footer{
     .titulo-tecnologias{
         margin: 0 100px;
     }
-
     .containerTituloPasos{
         flex-direction: row;
         justify-content: space-around;
@@ -401,10 +395,6 @@ footer{
         font-size: 70px;
     }/*texto del encabezado*/
 
-
-    
-    
-
     .seccion-descripcion{
         margin: 20px;
     }
@@ -433,7 +423,7 @@ footer{
         margin-bottom: 20px;
     }
     
-
+    
     /*seccion de desarrollo*/
     .seccion-desarrollo{
         margin: 25px 10px;

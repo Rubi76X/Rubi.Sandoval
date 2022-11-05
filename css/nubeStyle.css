@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
+/*Cuerpo*/
 body{
     font-family: 'Raleway', sans-serif;
     color: black;
-}   /*Cuerpo*/
-
+}   
 body::-webkit-scrollbar{
     display: none;
 }
@@ -37,25 +37,21 @@ body::-webkit-scrollbar{
     display: inline;
 }   /*Barra de navegacion*/
 
-
-
+/*Encabezado*/
 .imgNube{
     margin: 0 50px;
     width: auto;
     height: 580px;
     background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../img/nube.jpeg);
-}/*Encabezado*/
-
+}
 .imgNube h1{
     position: relative;
     top: 190px;
     font-size: 100px;
     text-align: center;
     color: white;
-}/*texto del encabezado*/
-/*Encabezado*/
-
+}
 
 .seccion-descripcion{
     display: flex;
@@ -70,7 +66,7 @@ body::-webkit-scrollbar{
     color: rgb(105, 112, 115);
     text-align: justify;
     width: 50%;
-}   /*descripcion*/
+}   
 .Tdescripcion{
     font-size: 80px;
     color: black;
@@ -131,7 +127,7 @@ body::-webkit-scrollbar{
     margin: 0;
     font-size: 18px;
     margin: 10px;
-}/*Seccion desarrollo paso 1*/
+}
 
 /*Footer*/
 footer{
@@ -298,6 +294,7 @@ footer{
 }
 /*footer*/
 
+
 @media (max-width:1220px) {
     .containerDes img{
         height: 500px;
@@ -326,6 +323,7 @@ footer{
         height: 420px;
     }
 }
+
 @media (max-width:960px) {
     .seccion-desarrollo1{
         flex-direction: column-reverse;
@@ -345,6 +343,7 @@ footer{
         height: 460px;
     }
 }
+
 @media screen and (max-width:760px){ 
     .footerContacto, .footerNavegacion{
         display: none;
@@ -375,11 +374,13 @@ footer{
         margin: 8px;
     }
 }
+
 @media screen and (max-width:660px){ 
     .imgNube h1{
         top: 165px;
     }
 }
+
 @media screen and (max-width:570px){ 
     .titulo-nombre{
         display: none;
@@ -416,11 +417,13 @@ footer{
         font-size: 13px;
     }
 }
+
 @media screen and (max-width:525px){ 
     .imgNube h1{
         top: 110px;
     }
 }
+
 @media screen and (max-width:377px){ 
     .imgNube h1{
         top: 125px;
