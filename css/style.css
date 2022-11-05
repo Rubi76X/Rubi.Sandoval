@@ -23,37 +23,37 @@ body::-webkit-scrollbar{
 }
 .navegacion-principal li{
     display: inline;
-}/*Barra de navegación superior*/
+}
 .contenedorPortafolio, .contenedorNombreLogos{
     display: flex;
     align-items: center;
     margin-right: 50px;
-}/*alineacion contenedores*/
+}
 #logo-linkedin, #logo-github, #logo-email{
     width: 45px;
     height: auto;
-}/*tamaño logos*/
+}
 .titulo-nombre, .titulo-portafolio{
     font-size: 30px;
-}/*tamaño de letra*/
+}
 .titulo-portafolio{
     margin-left: 50px;
-}/*Margen*/
+}
 .titulo-nombre{
     margin-right: 30px;
-}/*Margen*/
+}
 
 
 /*Barra de navegación lateral*/
 .navegacion-lateral{
     position: fixed;
     top: 110px;
-}/*posicion*/
+}
 .navegacion-lateral #ultimo-logo{
     position: relative;
     left: 5px;
     top: 2px;
-}/*posicion*/
+}
 
 
 /*Sección presentación*/
@@ -100,39 +100,34 @@ body::-webkit-scrollbar{
     height: auto;
     padding: 140px 0 0 0;
     margin: 0 40px 40px 50px;
-}   /*Contenedor de secciones*/
-
+}
 .container-proyectos,
 .container-certificados,
 .container-nube{
     flex-direction: column;
     margin-bottom: 50px;
     margin-left: 50px;
-}   /*Contenedor de boton, parrafo y titulo*/
-
+}   
 .img-proyectos,
 .img-certificados,
 .img-nube{
     width: 800px;
     height: 540px;
     transition: 600ms;
-}   /*Imagen de secciones*/
-
+}
 .titulo-proyectos,
 .titulo-certificados,
 .titulo-nube{
     font-size: 100px;
     margin-bottom: 10px;
-}   /*Titulo de secciones*/
-
+}   
 .proyectos p,
 .certificados p,
 .nube p{
     font-size: 22px;
     margin-bottom: 20px;
     color: rgba(41, 39, 39, 0.81);
-}   /*Parrafo de secciones*/
-
+}   
 .proyectos .btn-muestrameMas,
 .certificados .btn-muestrameMas,
 .nube .btn-muestrameMas{
@@ -146,9 +141,9 @@ body::-webkit-scrollbar{
     overflow: hidden;
     transition: 0.2s;
     cursor:pointer;
-}   /*Boton de secciones*/
+}   
 
-
+/*botones*/
 .proyectos .btn-muestrameMas:hover{
     background-color: #000000;
     box-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #000000;
@@ -166,14 +161,13 @@ body::-webkit-scrollbar{
     text-decoration: none;
 }/*Color de letras de botones*/
 
-
+/*imagenes*/
 .img-sobreMi, .img-proyectos, .img-certificados, .img-nube{
     border-style: solid;
     border-color: black;
     border-width: 1px;
     box-shadow: 5px 5px 5px 5px #000000;
 }/*Bordes de imagenes*/
-
 .img-proyectos:hover{
     opacity: 70%;  
 }
@@ -187,35 +181,32 @@ body::-webkit-scrollbar{
 
 
 /*R*/
-@media screen and (max-width:1335px){        /*si identifica una pantalla de hasta 480px*/
+@media screen and (max-width:1335px){
     .principal{
         padding-left: 70px;
-    }
-    .titulo-nube{
-        width: 510px;
-    }
+    }   
+    .nube{
+        margin-bottom: 36rem;
+    }    
     .container-proyectos{
         margin-right: 93px;
     }
     .container-nube{
         margin-right: 50px;
     }
-    .nube{
-        margin-bottom: 36rem;
+    .titulo-nube{
+        width: 510px;
     }
 }
 
 
-@media screen and (max-width:960px){        /*si identifica una pantalla de hasta 480px*/
+@media screen and (max-width:960px){       
     .principal{
         padding-left: 200px;
     }
-    
-    
-   
 }
 
-@media screen and (max-width:720px){        /*si identifica una pantalla de hasta 480px*/
+@media screen and (max-width:720px){     
     body{
         display: flex;
     }
