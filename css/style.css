@@ -222,7 +222,7 @@ body::-webkit-scrollbar{
 
     .navegacion-principal{
         width: 100%;
-        height: 270px;
+        height: 285px;
     }
     .titulo-nombre{
         display: none;
@@ -232,7 +232,7 @@ body::-webkit-scrollbar{
         
     }
     .titulo-portafolio{
-        font-size: 70px;
+        font-size: 80px;
     }
     #logo-linkedin, #logo-github, #logo-email{
         width: 120px;
