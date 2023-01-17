@@ -11,33 +11,32 @@
     </head>     
 
     <body>      <!--Contenido-->
-        <header class="caja">    <!--Encabezado-->
-                <nav class="navegacion-principal">
-                    
-                    <div class="contenedorPortafolio">
-                        <h2 class="titulo-portafolio">Portafolio</h2>
-                    </div>
-                    <div class="contenedorNombreLogos">
-                        <h2 class="titulo-nombre">Rubi</h2>
-                        <ul class="logos-barraNavegacion">
-                            <li>            <!-- Just an image -->
-                                <a class="navbar-brand" href="https://www.linkedin.com/in/rubi-sandoval/">
-                                <img src="img/logo-linkedIn.png" width="90" height="90" alt="logo de linkedIn" id="logo-linkedin"></a>
-                            </li>
-                            <li>                          
-                                <a class="navbar-brand" href="https://github.com/Rubi76X">
-                                <img src="img/logo-github.png" width="90" height="90" alt="logo de github" id="logo-github"></a>
-                            </li>
-                            <li>
-                                <a class="navbar-brand" href="mailto:rubibaltazarsandoval@gmail.com">
-                                <img src="img/logo-email.png" width="90" height="90" alt="logo de email" id="logo-email"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+        <header class="encabezado">    <!--Encabezado-->
+            <nav class="navPrincipal">
+                <div class="navPrincipal__contPortafolio">
+                    <h2 class="navPrincipal__contPortafolio--titulo">Portafolio</h2>
+                </div>
+                <div class="navPrincipal__contNombreLogos">
+                    <h2 class="navPrincipal__contNombreLogos--nombre">Rubi</h2>
+                    <ul class="navPrincipal__contNombreLogos--logos">
+                        <li>            
+                            <a class="navbar-brand" href="https://www.linkedin.com/in/rubi-sandoval/">
+                            <img src="img/logo-linkedIn.png" width="90" height="90" alt="logo de linkedIn" id="logo-linkedin"></a>
+                        </li>
+                        <li>                          
+                            <a class="navbar-brand" href="https://github.com/Rubi76X">
+                            <img src="img/logo-github.png" width="90" height="90" alt="logo de github" id="logo-github"></a>
+                        </li>
+                        <li>
+                            <a class="navbar-brand" href="mailto:rubibaltazarsandoval@gmail.com">
+                            <img src="img/logo-email.png" width="90" height="90" alt="logo de email" id="logo-email"></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
-            <nav class="navegacion-lateral">
-                <ul class="logos-barraNavegacionLateral">
+            <nav class="navLateral">
+                <ul class="navLateral__logos"><!-- logos-barraNavegacionLateral -->
                     <li>
                         <a class="navbar-brand" href="#seccion-2">
                         <img src="img/logo-trabajo.png" width="50" height="50" alt="logo de trabajo"></a>
@@ -48,7 +47,7 @@
                     </li>
                     <li id="ultimo-logo">
                         <a class="navbar-brand" href="#seccion-4">
-                            <img src="img/logo-nube.png" width="41" height="41" alt="logo de nube"></a>
+                        <img src="img/logo-nube.png" width="41" height="41" alt="logo de nube"></a>
                     </li>
                 </ul>
             </nav>
@@ -56,60 +55,57 @@
      
         <main>
 
-            <div class="contenedor-scroll">
             <section class="principal">
                 
-                    <img class="img-presentacion"  src="img/foto.jpg" alt="Foto de presentación">
-                    <div class="container-presentacion">
-                        <div class="titulo-saludo">
+                    <img class="principal__img"  src="img/foto.jpg" alt="Foto de presentación">
+                    <div class="principal__contenedor">
+                        <div class="principal__contenedor--saludo">
                             <h1>HOLA...</h1>
                         </div>
-                        <div class="titulo-saludo-datos">
+                        <div class="principal__contenedor--datos">
                             <h1>SOY RUBI,<br> WEB<br> DEVELOPER.</h1>
                         </div>
-                        <div class="frase">
+                        <div class="principal__contenedor--frase">
                             <p>“El arte desafía a la tecnología y la tecnología inspira el arte”</p>
                         </div>
-                        <div class="frase-autor">
+                        <div class="principal__contenedor--autor">
                             <p>John Lasseter</p>
                         </div>
                     </div>
             </section>
 
-
             <section class="proyectos" id="seccion-2"> <!--contenido para bloques relacionados entre si -->
-                <div class="container-proyectos">
-                    <div class="container-proyText">
-                        <h2 class="titulo-proyectos">Proyectos</h2>
+                <div class="proyectos__contenedor">
+                    <div class="proyectos__contenedor--texto">
+                        <h2>Proyectos</h2>
                         <p>Recorre algunos de mis trabajos.</p>
                     </div>
                     <button class="btn-muestrameMas"><a href="pages/proyectos.html">Muéstrame más</a></button>
                 </div>
-                <img class="img-proyectos"  src="img/proyectos.jpeg" alt="Sitio de trabajo">
+                <img class="proyectos__img"  src="img/proyectos.jpeg" alt="Sitio de trabajo">
             </section>
 
             <section class="certificados" id="seccion-3"> <!--contenido para bloques relacionados entre si -->
-                <div class="container-certificados">
-                    <div class="container-cerText"> 
-                        <h2 class="titulo-certificados">Certificados</h2>
+                <div class="certificados__contenedor">
+                    <div class="certificados__contenedor--texto"> 
+                        <h2>Certificados</h2>
                         <p>Conoce un poco de mi formación.</p>
                     </div>
                     <button class="btn-muestrameMas"><a href="pages/certificados.html">Muéstrame más</a></button>
                 </div>
-                <img class="img-certificados"  src="img/certificados.jpeg" alt="Biblioteca con computador">
+                <img class="certificados__img"  src="img/certificados.jpeg" alt="Biblioteca con computador">
             </section>
 
             <section class="nube" id="seccion-4"> <!--contenido para bloques relacionados entre si -->
-                <div class="container-nube">
-                    <div class="container-nubeText">
-                        <h2 class="titulo-nube">Prácticas<br>de la nube</h2>
+                <div class="nube__contenedor">
+                    <div class="nube__contenedor--texto">
+                        <h2>Prácticas<br>de la nube</h2>
                         <p>Descubre mis trabajos en la nube.</p>
                     </div>
                     <button class="btn-muestrameMas"><a href="pages/nube.html">Muéstrame más</a></button>
                 </div>
-                <img class="img-nube"  src="img/nube.jpeg" alt="Informática en la nube">
+                <img class="nube__img"  src="img/nube.jpeg" alt="Informática en la nube">
             </section>
-        </div>
 
         </main>
 

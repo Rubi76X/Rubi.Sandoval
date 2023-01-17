@@ -9,24 +9,18 @@ body::-webkit-scrollbar{
     display: none;
 }
 
-.titulo-nombre{
-    font-size: 30px;
-    top: 40px;
-    left: 1120px;
-}
-.nav-fecha img{
+/*Barra de navegación*/
+.navegacion__flecha img{
     position: relative;
     top: 0;
     left: 30px;
     width: 45px;
     height: 45px;
 }
-#logo-linkedin, #logo-github, #logo-email{
-    width: 45px;
-    height: 45px;
-}
-#logo-email{
-    margin-right: 20px;
+.navegacion__contenido--nombre{
+    font-size: 30px;
+    top: 40px;
+    left: 1120px;
 }
 .navegacion-principal{
     position: relative;
@@ -35,9 +29,16 @@ body::-webkit-scrollbar{
 }
 .navegacion-principal li{
     display: inline;
-}   /*Barra de navegacion*/
+}
+#logo-linkedin, #logo-github, #logo-email{
+    width: 45px;
+    height: 45px;
+}
+#logo-email{
+    margin-right: 20px;
+}  
 
-/*Encabezado*/
+/*Imagen principal*/
 .imgNube{
     margin: 0 50px;
     width: auto;
@@ -53,7 +54,8 @@ body::-webkit-scrollbar{
     color: white;
 }
 
-.seccion-descripcion{
+/*Sección descripción*/
+.descripcion{
     display: flex;
     align-items: center;
     margin: 100px 50px;
@@ -61,20 +63,20 @@ body::-webkit-scrollbar{
     flex-direction: row;
     flex-wrap: wrap;
 }
-.descripcion{
+.descripcion__texto{
     font-size: 22px;
     color: rgb(105, 112, 115);
     text-align: justify;
     width: 50%;
 }   
-.Tdescripcion{
+.descripcion__titulo{
     font-size: 80px;
     color: black;
 }
 
 
 /*Seccion desarrollo*/
-.seccion-desarrollo{
+.desarrollo{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -84,7 +86,7 @@ body::-webkit-scrollbar{
     justify-content: space-between;
     align-items: center;
 }
-.seccion-desarrollo1{
+.desarrollo1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -94,34 +96,34 @@ body::-webkit-scrollbar{
     justify-content: space-between;
     align-items: center;
 }
-.containerTituloPasos{
+.desarrollo__titulo{
     width: 35%;
     height: auto;
     flex-direction: column;
 }
-.containerTituloPasos h1{
+.desarrollo__titulo h1{
     font-size: 90px;
     text-align: center;
 }
-.containerDes{
+.desarrollo__contenedor{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 65%;
 }
-.containerDes:hover {
+.desarrollo__contenedor:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-.containerDes img{
+}
+.desarrollo__contenedor img{
     width: 100%;
     height: 500px;
 }
 
 
 /* Bottom right text */
-.text-block {
+.desarrollo__contenedor--texto {
     opacity: 90%;
 }
-.text-block p{
+.desarrollo__contenedor--texto p{
     color: rgb(0, 0, 0);
     text-align: justify;
     margin: 0;
@@ -296,13 +298,14 @@ footer{
 
 
 @media (max-width:1220px) {
-    .containerDes img{
+    .desarrollo__contenedor img{
         height: 500px;
     }
 }
 
 @media (max-width:1050px) {
-    .nav-fecha img{
+    /*Barra de navegación*/
+    .navegacion__flecha img{
         left: 0;
     }
     #logo-email{
@@ -311,6 +314,8 @@ footer{
     .emailDireccion{
         margin-right: 0;
     }
+
+    /*Imagen principal*/
     .imgNube{
         margin-left: 0;
         margin-right: 0;
@@ -319,72 +324,84 @@ footer{
         top: 200px;
         font-size: 70px;
     }
-    .containerDes img{
+
+    /*Sección desarrollo*/
+    .desarrollo__contenedor img{
         height: 420px;
     }
 }
 
 @media (max-width:960px) {
-    .seccion-desarrollo1{
+    /*Sección desarrollo*/
+    .desarrollo{
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-bottom: 100px;
+    }
+    .desarrollo1{
         flex-direction: column-reverse;
         margin-left: 80px;
         margin-right: 80px;
         margin-bottom: 100px;
     }
-    .seccion-desarrollo{
-        margin-left: 80px;
-        margin-right: 80px;
-        margin-bottom: 100px;
-    }
-    .containerTituloPasos, .containerDes{
+    .desarrollo__titulo, .desarrollo__contenedor{
         width: 100%;
     }
-    .containerDes img{
+    .desarrollo__contenedor img{
         height: 460px;
     }
 }
 
 @media screen and (max-width:760px){ 
-    .footerContacto, .footerNavegacion{
-        display: none;
-    }
-    .descripcion{
+    /*Sección descripción*/
+    .descripcion__texto{
         width: 100%;
     }
-    .Tdescripcion h1{
+    .descripcion__titulo h1{
         font-size: 36px;
     }
-    .descripcion p{
+    .descripcion__texto p{
         font-size: 20px;
     }
-    .containerTituloPasos h1{
+
+    /*Sección desarrollo*/
+    .desarrollo{
+        margin-bottom: 80px;
+    }
+    .desarrollo1{
+        margin-bottom: 80px;
+    }
+    .desarrollo__titulo h1{
         font-size: 50px;
     }
-    .seccion-desarrollo1{
-        margin-bottom: 80px;
-    }
-    .seccion-desarrollo{
-        margin-bottom: 80px;
-    }
-    .containerDes img{
+    .desarrollo__contenedor img{
         height: 300px;
     }
-    .text-block p{
+    .desarrollo__contenedor--texto p{
         font-size: 17px;
         margin: 8px;
+    }
+
+    /*Pie de página*/
+    .footerContacto, .footerNavegacion{
+        display: none;
     }
 }
 
 @media screen and (max-width:660px){ 
+    /*Imagen principal*/
     .imgNube h1{
         top: 165px;
     }
 }
 
 @media screen and (max-width:570px){ 
-    .titulo-nombre{
+    /*Barra de navegación*/
+    .navegacion__contenido--nombre{
         display: none;
     }
+
+    /*Imagen principal*/
     .imgNube{
         height: 420px;
     }
@@ -393,38 +410,43 @@ footer{
         font-size: 55px;
     }
 
-    .seccion-descripcion{
+    /*Sección descripción*/
+    .descripcion{
         margin-left: 20px;
         margin-right: 20px;
     }
-    .Tdescripcion h1{
+    .descripcion__titulo h1{
         font-size: 30px;
     }
-    .containerTituloPasos h1{
-        font-size: 40px;
-    }
-    .descripcion p{
+    .descripcion__texto p{
         font-size: 17px;
     }
-    .seccion-desarrollo1, .seccion-desarrollo{
+
+    /*Sección desarrollo*/
+    .desarrollo1, .desarrollo{
         margin-left: 20px;
         margin-right: 20px;
     }
-    .containerDes img{
+    .desarrollo__titulo h1{
+        font-size: 40px;
+    }
+    .desarrollo__contenedor img{
         height: 250px;
     }
-    .text-block p{
+    .desarrollo__contenedor--texto p{
         font-size: 13px;
     }
 }
 
 @media screen and (max-width:525px){ 
+    /*Imagen principal*/
     .imgNube h1{
         top: 110px;
     }
 }
 
 @media screen and (max-width:377px){ 
+    /*Imagen principal*/
     .imgNube h1{
         top: 125px;
         font-size: 45px;

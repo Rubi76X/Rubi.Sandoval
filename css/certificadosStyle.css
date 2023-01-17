@@ -9,18 +9,26 @@ body::-webkit-scrollbar{
     display: none;
 }
 
-
-.titulo-nombre{
-    font-size: 30px;
-    top: 40px;
-    left: 1120px;
-}
-.nav-fecha img{
+/*Barra de navegación*/
+.navegacion__fecha img{
     position: relative;
     top: 0;
     left: 30px;
     width: 45px;
     height: 45px;
+}
+.navegacion__contenedor--titulo{
+    font-size: 30px;
+    top: 40px;
+    left: 1120px;
+}
+.navegacion__contenedor--logos{
+    position: relative;
+    right: 0;
+    top: 0;
+}
+.navegacion__contenedor--logos li{
+    display: inline;
 }
 #logo-linkedin, #logo-github, #logo-email{
     width: 45px;
@@ -28,17 +36,9 @@ body::-webkit-scrollbar{
 }
 #logo-email{
     margin-right: 20px;
-}
-.navegacion-principal{
-    position: relative;
-    right: 0;
-    top: 0;
-}
-.navegacion-principal li{
-    display: inline;
-}   /*Barra de navegación superior*/
+}   
 
-/*Encabezado*/
+/*Imagen principal*/
 .imgCertificados{
     margin: 0 50px;
     width: auto;
@@ -56,21 +56,21 @@ body::-webkit-scrollbar{
 }
 
 
-/*Secion de certificados*/
-.seccion-certificados{
+/*Sección de certificados*/
+.secCertificados{
     display: flex;
     padding: 150px 0;
     flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
 }
-.contenedor{
+.secCertificados__contenedor{
     padding: 0;
     margin: 0;
     width: auto;
     height: auto;
 }
-.image {
+.secCertificados__contenedor--img{
     border-radius: 10px;
     width: 435px;
     height: 334px;
@@ -78,7 +78,7 @@ body::-webkit-scrollbar{
     border-color: #282626;
     border-width: 1px;
 }
-.overlay{
+.secCertificados__contenedor--overlay{
     position: relative;
     bottom: 335px;
     left: auto;
@@ -91,14 +91,14 @@ body::-webkit-scrollbar{
     border-radius: 10px;
     opacity: 70%;
 }
-.contenedor a{
+.secCertificados__contenedor a{
     text-decoration: none;
     color: white;
 }
-.contenedor:hover .overlay{
+.secCertificados__contenedor:hover .secCertificados__contenedor--overlay{
     transform: scale(1);
 }
-.text {
+.secCertificados__contenedor--texto{
     color: white;
     font-size: 20px;
     position: absolute;
@@ -275,7 +275,8 @@ footer{
 
 
 @media (max-width:1050px) {
-    .nav-fecha img{
+    /*Barra de navegación*/
+    .navegacion__fecha img{
         left: 0;
     }
     #logo-email{
@@ -284,6 +285,7 @@ footer{
     .emailDireccion{
         margin-right: 0;
     }
+    /*Imagen principal*/
     .imgCertificados{
         margin-left: 0;
         margin-right: 0;
@@ -297,6 +299,7 @@ footer{
 }
 
 @media (max-width:620px) {
+    /*Imagen principal*/
     .imgCertificados h1{
         top: 240px;
         font-size: 85px;
@@ -304,6 +307,7 @@ footer{
 }
 
 @media (max-width:570px) {
+    /*Imagen principal*/
     .imgCertificados{
         height: 420px;
     }
@@ -314,32 +318,36 @@ footer{
 }
 
 @media screen and (max-width:520px){ 
-    .titulo-nombre{
+    /*Barra de navegación*/
+    .navegacion__fecha img{
+        width: 40px;
+        height: 40px;
+    }
+    .navegacion__contenedor--titulo{
         display: none;
     }
     #logo-linkedin, #logo-github, #logo-email{
         width: 40px;
         height: 40px;
     }
-    .nav-fecha img{
-        width: 40px;
-        height: 40px;
-    }/*navBar*/
-
-    .image {
+    
+    /*Sección certificados*/
+    .secCertificados__contenedor--img{
         border-radius: 10px;
         width: 300px;
         height: 230px;
     }
-    .text {
-        font-size: 18px;
-    }
-    .overlay{
+    .secCertificados__contenedor--overlay{
         bottom: 230px;
     }
+    .secCertificados__contenedor--texto{
+        font-size: 18px;
+    }
+    
 }
 
 @media screen and (max-width:420px){
+    /*Imagen principal*/
     .imgCertificados h1{
         top: 175px;
         font-size: 55px;

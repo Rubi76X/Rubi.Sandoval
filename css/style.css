@@ -10,8 +10,8 @@ body::-webkit-scrollbar{
 }/*scroll*/
 
 
-/*Navbar principal*/
-.navegacion-principal{
+/*Barra de navegación principal*/
+.navPrincipal{
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -21,73 +21,95 @@ body::-webkit-scrollbar{
     background-color: rgba(0, 0, 0, 0.71);
     color: #a6a6a6;
 }
-.navegacion-principal li{
+
+.navPrincipal li{
     display: inline;
 }
-.contenedorPortafolio, .contenedorNombreLogos{
+
+.navPrincipal__contPortafolio,
+.navPrincipal__contNombreLogos{
     display: flex;
     align-items: center;
     margin-right: 50px;
 }
-#logo-linkedin, #logo-github, #logo-email{
+
+#logo-linkedin,
+#logo-github, 
+#logo-email{
     width: 45px;
     height: auto;
 }
-.titulo-nombre, .titulo-portafolio{
+
+.navPrincipal__contNombreLogos--nombre,
+.navPrincipal__contPortafolio--titulo{
     font-size: 30px;
 }
-.titulo-portafolio{
+
+.navPrincipal__contPortafolio--titulo{
     margin-left: 50px;
 }
-.titulo-nombre{
+
+.navPrincipal__contNombreLogos--nombre{
     margin-right: 30px;
 }
 
 
+
 /*Barra de navegación lateral*/
-.navegacion-lateral{
+.navLateral{
     position: fixed;
     top: 110px;
 }
-.navegacion-lateral #ultimo-logo{
+
+.navLateral #ultimo-logo{
     position: relative;
     left: 5px;
     top: 2px;
 }
 
 
-/*Sección presentación*/
+
+/*Sección principal*/
 .principal{
     display: flex;
-    padding: 135px 0 0 0;
+    padding: 115px 0 0 0;
     width: 940px;
     margin: 0 auto;
     align-items: center;
 }
-.container-presentacion{
+
+.principal__contenedor{
     flex-direction: column;
 }
-.img-presentacion{
+
+.principal__img{
     justify-content: left;
     width: 440px;
     margin: 0 20px 0 0;
     border-radius: 95px;
 }
-.titulo-saludo{
+
+.principal__contenedor--saludo{
     font-size: 100px;
     padding: 10px 0 15px 0;
     margin-bottom: 15px;
 }
-.titulo-saludo-datos{
+
+.principal__contenedor--datos{
     font-size: 80px;
     margin-bottom: 5px;
 }
-.frase, .frase-autor{
+
+.principal__contenedor--frase,
+.principal__contenedor--autor{
     font-size: 20px;
 }
-.frase{
+
+.principal__contenedor--frase{
     padding: 10px 0 5px 0;
-}    
+}
+
+
 
 
 /*Secciones*/
@@ -101,33 +123,38 @@ body::-webkit-scrollbar{
     padding: 140px 0 0 0;
     margin: 0 40px 40px 50px;
 }
-.container-proyectos,
-.container-certificados,
-.container-nube{
+
+.proyectos__contenedor,
+.certificados__contenedor,
+.nube__contenedor{
     flex-direction: column;
     margin-bottom: 50px;
     margin-left: 50px;
-}   
-.img-proyectos,
-.img-certificados,
-.img-nube{
+}  
+
+.proyectos__img,
+.certificados__img,
+.nube__img{
     width: 800px;
     height: 540px;
     transition: 600ms;
 }
-.titulo-proyectos,
-.titulo-certificados,
-.titulo-nube{
+
+.proyectos h2,
+.certificados h2,
+.nube h2{
     font-size: 100px;
     margin-bottom: 10px;
 }   
+
 .proyectos p,
 .certificados p,
 .nube p{
     font-size: 22px;
     margin-bottom: 20px;
     color: rgba(41, 39, 39, 0.81);
-}   
+}  
+
 .proyectos .btn-muestrameMas,
 .certificados .btn-muestrameMas,
 .nube .btn-muestrameMas{
@@ -143,38 +170,46 @@ body::-webkit-scrollbar{
     cursor:pointer;
 }   
 
+
 /*botones*/
 .proyectos .btn-muestrameMas:hover{
     background-color: #000000;
     box-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #000000;
 }   /*Boton proyectos*/
+
 .certificados .btn-muestrameMas:hover{
     background-color: #000000;
     box-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #000000;
 }   /*Boton certificados*/
+
 .nube .btn-muestrameMas:hover{
     background-color: #000000;
     box-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #000000;
 }   /*Boton certificados*/
+
 .btn-muestrameMas a{
     color: white;
     text-decoration: none;
 }/*Color de letras de botones*/
 
-/*imagenes*/
-.img-sobreMi, .img-proyectos, .img-certificados, .img-nube{
+
+/*animaciones de imagenes*/
+.proyectos__img, .certificados__img, .nube__img{
     border-style: solid;
     border-color: black;
     border-width: 1px;
     box-shadow: 5px 5px 5px 5px #000000;
 }/*Bordes de imagenes*/
-.img-proyectos:hover{
+
+.proyectos__img:hover{
     opacity: 70%;  
 }
-.img-certificados:hover{
+
+.certificados__img:hover{
     opacity: 70%;
 }
-.img-nube:hover{
+
+.nube__img:hover{
     opacity: 70%;
 }
 
@@ -182,55 +217,66 @@ body::-webkit-scrollbar{
 
 /*R*/
 @media screen and (max-width:1335px){
+    /*seccion principal*/
     .principal{
         padding-left: 70px;
-    }   
-    .nube{
-        margin-bottom: 36rem;
-    }    
-    .container-proyectos{
+    }  
+
+    /*seccion proyectos*/
+    .proyectos__contenedor{
         margin-right: 93px;
     }
-    .container-nube{
+
+    /*seccion nube*/
+    .nube{
+        margin-bottom: 36rem;
+    }
+    .nube__contenedor{
         margin-right: 50px;
     }
-    .titulo-nube{
+    .nube h2{
         width: 510px;
     }
 }
 
-@media screen and (max-width:960px){       
+@media screen and (max-width:960px){  
+    /*seccion principal*/     
     .principal{
         padding-left: 200px;
     }
 }
 
-@media screen and (max-width:720px){     
+@media screen and (max-width:720px){ 
+    /*cuerpo*/    
     body{
         display: flex;
     }
 
-    .navegacion-principal{
+    /*barra de navegación principal*/
+    .navPrincipal{
         width: 100%;
         height: 285px;
     }
-    .titulo-nombre{
+    .navPrincipal__contNombreLogos--nombre{
         display: none;
     }
-    .contenedorNombreLogos{
-        display: flex;
-    }
-    .titulo-portafolio{
+    .navPrincipal__contPortafolio--titulo{
         font-size: 80px;
+    }
+    .navPrincipal__contNombreLogos{
+        display: flex;
     }
     #logo-linkedin, #logo-github, #logo-email{
         width: 120px;
         height: 120px;
     }
-    .logos-barraNavegacionLateral{
+
+    /*barra de navegación lateral*/
+    .navLateral__logos{
         display: none;
     }
 
+    /*seccion principal*/
     .principal{
         display: flex;
         padding: 280px 0 0 0;
@@ -239,28 +285,28 @@ body::-webkit-scrollbar{
         flex-direction: column-reverse;
         flex-wrap: wrap;
     }
-    .container-presentacion{
+    .principal__contenedor{
         width: auto;
         text-align: center;
     }
-    .img-presentacion{
+    .principal__img{
         padding: 0;
         margin: 0;
         width: 100%;
         border-radius: 0; 
     }
-    .titulo-saludo{
+    .principal__contenedor--saludo{
         font-size: 280px;
     }
-    .titulo-saludo-datos{
+    .principal__contenedor--datos{
         font-size: 170px;
     }
-    .frase, .frase-autor{
+    .principal__contenedor--frase, 
+    .principal__contenedor--autor{
         font-size: 50px;
     }
-    /*seccion principal*/
-
-
+    
+    /*Secciones*/
     .proyectos, .certificados, .nube{
         display: flex;
         padding-top: 300px;
@@ -276,15 +322,9 @@ body::-webkit-scrollbar{
     .nube{
         margin-bottom: 960px;
     }
-    .img-proyectos, .img-certificados{
-        width: 100%;
-        height: auto;
-    }
-    .img-nube{
-        width: 100%;
-        height: 855px;
-    }
-    .container-proyectos, .container-certificados, .container-nube{
+    .proyectos__contenedor, 
+    .certificados__contenedor, 
+    .nube__contenedor{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -294,16 +334,22 @@ body::-webkit-scrollbar{
         width: auto;
         flex-wrap: wrap;
     }
-    .container-proyText, .container-cerText, .container-nubeText{
+    .proyectos__contenedor--texto,
+    .certificados__contenedor--texto, 
+    .nube__contenedor--texto{
         display: flex;
         flex-direction: column;
     }
-    .titulo-proyectos, .titulo-certificados, .titulo-nube{
+    .proyectos h2, 
+    .certificados h2, 
+    .nube h2{
         text-align: center;
         font-size: 210px;
         width: auto;
     }
-    .proyectos p, .nube p, .certificados p{
+    .proyectos p, 
+    .nube p, 
+    .certificados p{
         text-align: center;
         font-size: 70px;
         margin-top: 10px;
@@ -318,7 +364,18 @@ body::-webkit-scrollbar{
     .nube p{
         width: 1150px;
     }
-    .proyectos .btn-muestrameMas, .certificados .btn-muestrameMas, .nube .btn-muestrameMas{
+    .proyectos__img, 
+    .certificados__img{
+        width: 100%;
+        height: auto;
+    }
+    .nube__img{
+        width: 100%;
+        height: 855px;
+    }
+    .proyectos .btn-muestrameMas, 
+    .certificados .btn-muestrameMas, 
+    .nube .btn-muestrameMas{
         margin-top: 25px;
         width: 600px;
         height: 130px;
@@ -327,5 +384,5 @@ body::-webkit-scrollbar{
         border-radius: 5px;
         
     }
-    /*Secciones*/
+    
 }

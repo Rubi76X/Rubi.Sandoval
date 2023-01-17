@@ -8,18 +8,26 @@ body::-webkit-scrollbar{
     display: none;
 }/*scroll*/
 
-
-.titulo-nombre{
+/*Barra de navegación*/
+.navegacion__logos--nombre{
     font-size: 30px;
     top: 40px;
     left: 1120px;
 }
-.nav-fecha img{
+.navegacion__fecha img{
     position: relative;
     top: 0;
     left: 30px;
     width: 45px;
     height: 45px;
+}
+.navegacion__logos--img{
+    position: relative;
+    right: 0;
+    top: 0;
+}
+.navegacion__logos--img li{
+    display: inline;
 }
 #logo-linkedin, #logo-github, #logo-email{
     width: 45px;
@@ -28,18 +36,11 @@ body::-webkit-scrollbar{
 #logo-email{
     margin-right: 20px;
 }
-.navegacion-principal{
-    position: relative;
-    right: 0;
-    top: 0;
-}
-.navegacion-principal li{
-    display: inline;
-}   /*Barra de navegacion*/
 
 
-/*Seccion de presentacion*/
-.imgProyec{
+
+/*Sección de presentación*/
+.imgProyecto{
     margin:  0 50px;
     width: auto;
     height: 580px;
@@ -47,17 +48,17 @@ body::-webkit-scrollbar{
     url(../img/proyectos.jpeg);
     background-repeat: round;
 }
-.imgProyec h1{
+.imgProyecto h1{
     position: relative;
     top: 230px;
     font-size: 100px;
     text-align: center;
     color: white;
-}/*texto del encabezado*/
+}/*Texto del encabezado*/
 
 
-/*Seccion descripcion*/
-.seccion-descripcion{
+/*Sección descripción*/
+.secDescripcion{
     display: flex;
     align-items: center;
     margin: 50px;
@@ -66,36 +67,38 @@ body::-webkit-scrollbar{
     flex-wrap: wrap;
     
 } 
-.descripcion{
+.secDescripcion__texto{
     font-size: 20px;
     color: rgb(105, 112, 115);
     text-align: justify;
     width: 50%;
 }
-.contenedorHerramientas{
+.tecnologias{
     display: flex;
     flex-direction: column;
     margin: 100px;
 }
-.contenedorTituloT{
+.contTecnologias{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.tituloT img{
+.contTecnologias__titulo img{
     width: 520px;
     height: 280px;
     margin: 10px;
 }
-.tituloD, .tituloT, .tituloT1{
+.secDescripcion__titulo,
+.contTecnologias__titulo,
+.tituloT1{
     font-size: 80px;
     color: black;
 }
-.tituloT img .imgGit{
+.contTecnologias__titulo img .contTecnologias__titulo--imgGit{
     margin-left: 50px;
 }
-.tituloT{
+.contTecnologias__titulo{
     margin: 50px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
@@ -103,7 +106,7 @@ body::-webkit-scrollbar{
 .tituloT1{
     margin-left: 50px;
 }
-.titulo-tecnologias{
+.tipoTecnologias{
     display: flex;
     justify-content: flex-start;
     width: auto;
@@ -114,7 +117,7 @@ body::-webkit-scrollbar{
     font-size: 30px;
     color: rgb(121, 127, 135);
 }
-.titulo-tecnologias div{
+.tipoTecnologias div{
     width: 33%;
     height: auto;
     margin-bottom: 20px;
@@ -126,8 +129,8 @@ body::-webkit-scrollbar{
 }
 
 
-/*Seccion de desarrollo*/
-.seccion-desarrollo{
+/*Sección de desarrollo*/
+.desarrollo{
     display: flex;
     background-color: rgb(0, 0, 0);
     margin: 50px 50px;
@@ -136,7 +139,7 @@ body::-webkit-scrollbar{
     height: auto;
     width: auto;
 }
-.containerTituloPasos{
+.desarrollo__contenedor{
     display: flex;
     width: 35%;
     flex-direction: column;
@@ -144,19 +147,19 @@ body::-webkit-scrollbar{
     justify-content: center;
     background-color: rgb(1, 1, 1);
 }
-.containerImg{
-    width: 65%;
-    height: auto;
-}
-.containerImg img{
-    width: 100%;
-    height: auto;
-}
-.containerTituloPasos h1{
+.desarrollo__contenedor h1{
     font-size: 60px;
     color: white;
 }
-.btn-sitio{
+.desarrollo__Img{
+    width: 65%;
+    height: auto;
+}
+.desarrollo__Img img{
+    width: 100%;
+    height: auto;
+}
+.desarrollo__contenedor--btn{
     width: 150px;
 }
 
@@ -327,9 +330,11 @@ footer{
 /*footer*/
 
 
+
 /*R*/
 @media (max-width:1050px) {
-    .nav-fecha img{
+    /*Barra de navegación*/
+    .navegacion__fecha img{
         left: 0;
     }
     #logo-email{
@@ -338,44 +343,51 @@ footer{
     .emailDireccion{
         margin-right: 0;
     }
-    .imgProyec{
+    /*Sección de presentación*/
+    .imgProyecto{
         margin-left: 0;
         margin-right: 0;
     }
-    .titulo-tecnologias{
+    /*Sección descripción*/
+    .tipoTecnologias{
         margin: 0 100px;
     }
-    .containerTituloPasos{
+    /*Seccion desarrollo*/
+    .desarrollo__contenedor{
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
     }
-    .containerImg{
+    .desarrollo__Img{
         width: 100%;
     }
     
 }
 
 @media (max-width:720px) {
-    .descripcion{
+    /*Sección descripción*/
+    .secDescripcion__texto{
         width: 100%;
     }
-    .containerTituloPasos{
+    /*Sección desarrollo*/
+    .desarrollo__contenedor{
         flex-direction: column;
         justify-content: center;
     }
+    /*Footer*/
     .footerContacto, .footerNavegacion{
         display: none;
     }
 }
 
 @media (max-width:570px) {
-    .nav-fecha img{
+    /*barra de navegación*/
+    .navegacion__fecha img{
         left: 0;
         width: 40px;
         height: 40px;
     }
-    .titulo-nombre{
+    .navegacion__logos--nombre{
         display: none;
     }
     #logo-linkedin, #logo-github, #logo-email{
@@ -384,75 +396,81 @@ footer{
     }
     #logo-email{
         margin-right: 0;
-    }/*barra de navegacion*/
+    }
 
-    /*Seccion de presentacion*/
-    .imgProyec{
+    /*Sección de presentación*/
+    .imgProyecto{
         height: 420px;
     }
-    .imgProyec h1{
+    .imgProyecto h1{
         top: 160px;
         font-size: 70px;
-    }/*texto del encabezado*/
+    }
 
-    .seccion-descripcion{
+    /*Sección descripción*/
+    .secDescripcion{
         margin: 20px;
     }
-    .tituloD h1, .tituloT h1, .tituloT1 h1{
+    .secDescripcion__titulo h1,
+    .contTecnologias__titulo h1,
+    .tituloT1 h1{
         font-size: 30px;
         text-align: left;
     }
     .tituloT1{
         margin-left: 20px;
     }
-    .contenedorHerramientas{
+    .contTecnologias__titulo img{
+        width: 320px;
+        height: 180px;
+        margin: 10px;
+    }
+    .tipoTecnologias__nombre{
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    .descripcion p{
+    .secDescripcion__texto p{
         font-size: 17px;
     }
-    .titulo-tecnologias{
+    .tipoTecnologias{
         justify-content: left;
         margin-left: 20px;
         margin-right: 10px;
         font-size: 17px;
     }
-    .titulo-tecnologias div{
+    .tipoTecnologias div{
         width: 100%;
         margin-bottom: 20px;
     }
     
     
-    /*seccion de desarrollo*/
-    .seccion-desarrollo{
+    /*sección de desarrollo*/
+    .desarrollo{
         margin: 25px 10px;
     }
-    .containerTituloPasos h1{
+    .desarrollo__contenedor h1{
         font-size: 30px;
         margin-bottom: 0;
     }
-    .btn-sitio{
+    .btn-desarrollo__contenedor--btn{
         width: 80px;
         height: 20px;
         font-size: 10px;
         padding: 2px;
         margin-bottom: 7px;
     }
-    .tituloT img{
-        width: 320px;
-        height: 180px;
-        margin: 10px;
-    }
+
     
 }
 
 @media (max-width:420px) {
-    .imgProyec h1{
+    /*Sección de presentación*/
+    .imgProyecto h1{
         top: 160px;
         font-size: 55px;
     }
-    .containerTituloPasos h1{
+    /*sección de desarrollo*/
+    .desarrollo__contenedor h1{
         font-size: 25px;
         margin-bottom: 0;
     }
