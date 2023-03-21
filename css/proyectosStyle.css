@@ -95,22 +95,14 @@ a .contTecnologias__titulo--img{
     font-size: 80px;
     color: black;
 }
-a .contTecnologias__titulo--img{
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-}
+
 
 .contTecnologias__titulo{
     margin: 50px;
     margin-bottom: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.contTecnologias__titulo img:hover{
-    width: 590px;
-    height: 310px;
-}
+
 .tituloT1{
     margin-left: 50px;
 }
@@ -384,7 +376,7 @@ footer{
     
 }
 
-@media(min-width:720){
+@media(min-width:720px){
     /*Sección descripción*/
     a .contTecnologias__titulo--img{
         -webkit-transition: all 1s ease;
@@ -398,6 +390,10 @@ footer{
         margin-bottom: 20px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
+    .contTecnologias__titulo img:hover{
+        width: 590px;
+        height: 310px;
+    }
 }
 
 @media (max-width:720px) {
@@ -407,6 +403,9 @@ footer{
     }
     a .contTecnologias__titulo--img{
         margin: 10px;
+    }
+    .contTecnologias__titulo h1{
+        margin-bottom: 0;
     }
     
     /*Footer*/
@@ -449,7 +448,7 @@ footer{
     .secDescripcion__titulo h1,
     .contTecnologias__titulo h1,
     .tituloT1 h1{
-        font-size: 30px;
+        font-size: 27px;
         text-align: left;
     }
     .tituloT1{
@@ -459,6 +458,7 @@ footer{
         width: 320px;
         height: 180px;
         margin: 10px;
+        margin-top: 0;
     }
     .tipoTecnologias__nombre{
         margin-top: 20px;
@@ -490,5 +490,14 @@ footer{
         top: 160px;
         font-size: 55px;
     }
-    
+
+    /*Sección descripción*/
+    .contTecnologias__titulo h1{
+        font-size: 19px;
+    }
+    .contTecnologias__titulo img{
+        width: 230px;
+        height: 110px;
+        margin: 0 6px 6px 6px;
+    }
 }
