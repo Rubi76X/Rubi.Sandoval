@@ -87,7 +87,7 @@ body::-webkit-scrollbar{
 a .contTecnologias__titulo--img{
     width: 520px;
     height: 280px;
-    
+    margin: 0;
 }
 .secDescripcion__titulo,
 .contTecnologias__titulo,
@@ -384,10 +384,29 @@ footer{
     
 }
 
+@media(min-width:720){
+    /*Sección descripción*/
+    a .contTecnologias__titulo--img{
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+    }
+    
+    .contTecnologias__titulo{
+        margin: 50px;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
+
 @media (max-width:720px) {
     /*Sección descripción*/
     .secDescripcion__texto{
         width: 100%;
+    }
+    a .contTecnologias__titulo--img{
+        margin: 10px;
     }
     
     /*Footer*/
