@@ -59,41 +59,50 @@
                 </div>
             </div>
 
+
             <div class="tecnologias">
                 
+                
                 <div class="contTecnologias">
                     <div class="contTecnologias__titulo">
-                        <h1><strong>↽</strong> Trello</h1>
-                        <img src="../img/trello.png" alt="trello">
+                        <h1><strong>↽</strong> Figma</h1>
+                        <a href="https://www.figma.com/file/QK7b6FSBQFGlywdqUFfazF/mockup?node-id=0%3A1&t=tnX0na25vtY6PdE3-1" target="_blank">
+                            <img class="contTecnologias__titulo--img" id="imgFigma1" src="../img/figma.png" alt="Figma">
+                        </a>
                     </div>
                 
                     <div class="contTecnologias__titulo">
-                        <h1><strong>↽</strong> Discord</h1>
-                        <img src="../img/discord.png" alt="discord">
-                    </div>
-                </div>
-
-                <div class="contTecnologias">
-                    <div class="contTecnologias__titulo">
                         <h1><strong>↽</strong> Github</h1>
-                        <img src="../img/repositoriogit.png" alt="Github">
+                        <a href="https://github.com/Rubi76X/ProyectoIntegradorG" target="_blank">
+                            <img class="contTecnologias__titulo--img" src="../img/repositoriogit.png" alt="Github">
+                        </a>
                     </div>
 
                     <div class="contTecnologias__titulo">
                         <h1><strong>↽</strong> Whatsapp</h1>
-                        <img src="../img/ws.png" alt="Whatsapp">
+                        <a href="../img/ws.png" target="_blank">
+                            <img class="contTecnologias__titulo--img" src="../img/ws.png" alt="Whatsapp">
+                        </a>
                     </div>
-                </div>
-
-                <div class="contTecnologias">
-                    <div class="contTecnologias__titulo">
-                        <h1><strong>↽</strong> Figma</h1>
-                        <img class="contTecnologias__titulo--imgGit" src="../img/figma.png" alt="Figma">
-                        <img src="../img/figma1.png" alt="Figma">
-                    </div>
-                </div>
-            </div>
                 
+                    <div class="contTecnologias__titulo">
+                        <h1><strong>↽</strong> Trello</h1>
+                        <a href="../img/TrelloImg.png" target="_blank">
+                            <img class="contTecnologias__titulo--img" src="../img/trello.png" alt="trello">
+                        </a>
+                    </div>
+                
+                    <div class="contTecnologias__titulo">
+                        <h1><strong>↽</strong> Discord</h1>
+                        <a href="../img/discord.png" target="_blank">
+                            <img class="contTecnologias__titulo--img" src="../img/discord.png" alt="discord">
+                        </a>
+                    </div>
+                </div>
+   
+            </div>
+
+            
             <div class="tituloT1">
                 <h1><strong>↽</strong> Tenologías</h1>
             </div>
@@ -134,16 +143,65 @@
             </div>
         </section>  
 
-        <section class="desarrollo">
-            <div class="desarrollo__contenedor">
-                <h1>Dr. Lomito</h1>
-                <a href="https://github.com/Rubi76X/ProyectoIntegradorG" target="_blank" type="button" class="desarrollo__contenedor--btn btn btn-outline-secondary">Visitar sitio</a>
-            </div>
+        
+        <section class="desarrollo container">
+            <div class="fila">
+                <div class="column">
+                  <img src="../img/drLomito1.jpg" alt="Página de inicio" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="../img/drLomito5.jpg" alt="Página nosotros" onclick="myFunction(this);">
+                  </div>
+                <div class="column">
+                  <img src="../img/drLomito2.jpg" alt="Página de registro de usuario" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="../img/drLomito3.png" alt="Página de registro de veterinario" onclick="myFunction(this);">
+                </div>
+              </div>
 
-            <div class="desarrollo__Img">
-                <img src="../img/drLomito.png" alt="Página Dr.">
-            </div>
+              <div class="contenedor">  
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
+              </div>
+              
+              <div class="fila">
+                <div class="column">
+                    <img src="../img/drLomito4.jpg" alt="Página de inicio de sesión" onclick="myFunction2(this);">
+                  </div>
+                <div class="column">
+                  <img src="../img/drLomito6.jpg" alt="Página perfil" onclick="myFunction2(this);">
+                </div>
+                <div class="column">
+                  <img src="../img/drLomito8.jpg" alt="Página directorio de especialistas" onclick="myFunction2(this);">
+                </div>
+                <div class="column">
+                    <img src="../img/drLomito7.png" alt="Página quejas y sugerencias" onclick="myFunction2(this);">
+                  </div>
+              </div>
+            
+              <div class="contenedor">  
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg2" style="width:100%">
+                <div id="imgtext2"></div>
+              </div>
+
+              <div class="fila">
+                
+                <div class="column">
+                    <img src="../img/drLomito9.jpg" alt="Página perfil de veterinario" onclick="myFunction3(this);">
+                </div>
+                >
+              </div>
+            
+              <div class="contenedor">  
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg3" style="width:100%">
+                <div id="imgtext3"></div>
+              </div>
         </section>
+
 
     </main>
 
@@ -218,6 +276,7 @@
     </div>
     </footer>
 
+    <script src="../js/proyectos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
