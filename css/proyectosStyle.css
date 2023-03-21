@@ -485,6 +485,15 @@ footer{
 }
 
 @media (max-width:420px) {
+    /*Barra de navegación*/
+    .navegacion__fecha img{
+        width: 35px;
+        height: 35px;
+    }
+    #logo-linkedin, #logo-github, #logo-email{
+        width: 35px;
+        height: 35px;
+    }
     /*Sección de presentación*/
     .imgProyecto h1{
         top: 160px;

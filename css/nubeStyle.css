@@ -445,6 +445,18 @@ footer{
     }
 }
 
+@media screen and (max-width:420px){
+    /*Barra de navegación*/
+    .navegacion__flecha img{
+        width: 35px;
+        height: 35px;
+    }
+    #logo-linkedin, #logo-github, #logo-email{
+        width: 35px;
+        height: 35px;
+    }
+}
+
 @media screen and (max-width:377px){ 
     /*Imagen principal*/
     .imgNube h1{
