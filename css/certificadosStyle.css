@@ -363,5 +363,18 @@ footer{
         font-size: 45px;
     }
 
+    /*Sección certificados*/
+    .secCertificados__contenedor--img{
+        border-radius: 6px;
+        width: 210px;
+        height: 150px;
+    }
+    .secCertificados__contenedor--overlay{
+        bottom: 150px;
+    }
+    .secCertificados__contenedor--texto{
+        font-size: 13px;
+    }
+
  }
 
